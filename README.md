@@ -12,3 +12,4 @@ Matkul  : Web Service Development
 - berikut coding untuk shoes_api.php
 
 3. Berikut export dari http://localhost/phpmyadmin/index.php?route=/database/export&db=shoesstore
+fitur search, tambah shoes belum bisa
