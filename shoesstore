@@ -1,0 +1,83 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 09, 2025 at 02:50 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `shoesstore`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `shoes`
+--
+
+CREATE TABLE `shoes` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `price` varchar(100) NOT NULL,
+  `stock` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `shoes`
+--
+
+INSERT INTO `shoes` (`id`, `name`, `type`, `price`, `stock`) VALUES
+(1, 'Slip-Ins GO WALK 7 Mens Sneakers', 'Natural', 'Rp. 1.499.000', 26),
+(2, 'Slip-Ins GO WALK 7 Mens Sneakers', 'Black', 'Rp. 1.499.000', 6),
+(3, 'GO WALK 7 Mens Sneakers', 'Charcoal', 'Rp. 1.299.000', 15),
+(4, 'GO RUN Elevate 2.0 Mens Sneakers', 'Brown', 'Rp. 1.199.000', 5),
+(5, 'GO RUN Consistent 2.0 Mens Sneakers', 'Navy', 'Rp. 719.200', 11),
+(6, 'Skechers Slip-Ins Go Walk 7 Mens Walking Shoes ', 'Navy', 'Rp. 1.199.200', 5),
+(7, 'Skechers Go Walk Max Walker Womens Walking Shoes\r\n', 'Natural', 'Rp. 1.299.000', 22),
+(8, 'Skechers Go Run Lite Womens Running Shoes', 'Black', 'Rp. 999.000', 7),
+(9, 'SKECHERS GO WALK ARCH FIT WOMENS WALKING SHOES', 'TAUPE', 'Rp. 1.199.000', 10),
+(10, 'Sepatu Running Runfalcon 5\r\n', 'Multicolor', 'Rp. 850.000', 6),
+(11, 'Skechers SKX Resagrip Mens Basketball Shoes', 'Black\r\n', 'Rp. 1.999.000', 9),
+(12, 'Skechers Slip-Ins Go Walk Joy Womens Sneaker ', 'Navy', 'Rp. 999.000', 5),
+(13, 'GO WALK Smart 2 Womens Sneakers', 'Taupe', 'Rp. 1.099.000', 15),
+(14, 'NIKE Pegasus 5 GORE-TEX Mens Waterproof Trail Running Shoes', 'Green', 'Rp. 2.669.000', 11);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `shoes`
+--
+ALTER TABLE `shoes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `shoes`
+--
+ALTER TABLE `shoes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+   
